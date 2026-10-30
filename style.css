@@ -1,0 +1,109 @@
+body {
+    background: linear-gradient(135deg, #00c6a7, #0072ff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+form {
+    background-color: white;
+    width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 250px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #00aaff;
+    border-color: #0072ff;
+}
+
+textarea {
+    height: 75px;
+    vertical-align: middle;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #0072ff;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #0072ff;
+    cursor: pointer;
+    margin: 8px 5px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #004bb5;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: auto;
+        padding: 15px;
+    }
+
+    label {
+        width: 110px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    textarea {
+        max-width: 100%;
+    }
+}
